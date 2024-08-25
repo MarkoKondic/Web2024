@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base th:href="@{/}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+	<div th:if="${eUloga == 'admin'}" th:include="fragments :: admin_nav"></div>
+	<div th:if="${eUloga == 'menadzer'}" th:include="fragments :: menadzer_nav"></div>
+	<div th:if="${eUloga == 'kupac'}" th:include="fragments :: kupac_nav"></div>
+	<div th:if="${eUloga == 'none'}" th:include="fragments :: none_nav"></div>
+	<p> ssss</p>
+	
+  
+
+</body>
+</html>
